@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ResourcesBank" content="ResourcesBank">
+    <title>ResourcesBank</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="./image/book.png" type="image/gif" sizes="16x16">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="Icon/fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+    <Header >
+        <div class="container">
+        <div class="image">
+            <img src="./image/book.png" alt="book"/>
+            <img  class='fristimg' src="./image/Resources_Bank.png" alt="Resources_Bank"/>
+        </div>
+        <div class="search">
+            <select class="select ">
+                <option class="gray">Major</option>
+                <option class="gray">Level</option>
+                
+            </select>
+            <form class='Sform'action="">
+            <input  id="search" type="text" placeholder="ex. Electrical"/>
+            <button type="submit" class="searchbtn"><i  id='searchicon'class='bx bx-search'></i></button>
+        </form>
+    </div>
+    </div>
+    </Header>
+    <section>
+        <div class="container filter">
+            <div class="titile">
+                <h2>Filter by:</h2>
+            </div>
+            <div class="select">
+                <select class="select2">
+                    <option>University</option>
+                    <option>Zagazig University</option>
+                    <option>Ain-Shams University</option>
+                    <option>Alexandria University</option>
+                    <option>Cairo University</option>
+                    <option>Mansoura University</option>
+                    <option>Suez Canal University</option>
+                </select>
+                <select class="select2">
+                    <option>Specialization</option>
+                    <option>Electrical</option>
+                    <option>communications</option>
+                    <option>Civil</option>
+                    <option>computer & system</option>
+                    <option>..</option>
+                    
+                </select>
+                <select class="select2">
+                    <option>Level</option>
+                    <option>prep</option>
+                    <option>Level 1</option>
+                    <option>Level 2</option>
+                    <option>Level 3</option>
+                    <option>Level 4</option>
+                </select>
+                <select class="select2">
+                    <option>Course</option>
+                    <option>Math</option>
+                    <option>physic</option>
+                    <option>...</option>
+                    <option>...</option>
+                </select>
+                <!-- <select class="select2">
+                    <option>Material</option>
+                    <option>.</option>
+                    <option>.</option>
+                </select> -->
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+           <div class="contentword">
+            <h1 style="margin-bottom:5%">Welcome to the Resources Bank</h1>
+            <h3>You'll find everything related to the engineering faculty's subjects here.<br><br>
+            Now search in the name of the college, sh1ecialty, course name or subject name (for Zagazig University only)</h3>
+           </div>
+           <div class="contentimg">
+               <img src="./image/Resourses.png"/>
+           </div>
+        </div>
+        <!--start div contain filter material or course or else -->
+        <div class="content2 ">
+            <h1>Showing all results related to:</h1>
+            <!-- start div contain filter choosed -->
+            <div class="cont">
+            <div class="closeDiv">
+                <h3 id="displayfilter"></h3>
+                <div style="padding: 15px">
+                    <button class="close" aria-label="Close" ></button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        <!--end div contain filter material or course or else -->
+        <div class="content2 " id="Result">
+            <h1>Result</h1>
+            <!-- start div contain btn which contin required lin -->
+            <div class="">
+                    <button class="Rbtn" aria-label="" ><h3>course</h3><span>University</span> <span>-  level</span></button>
+                    <button class="Rbtn" aria-label="" ><h3>course</h3><span>University</span> <span>-  level</span></button>
+                
+            </div>
+        </div>
+      </section>  
+        <script src="jquery-3.6.0.min.js"></script>
+            <script src="main.js"></script>
+    
+</body>
+</html>
